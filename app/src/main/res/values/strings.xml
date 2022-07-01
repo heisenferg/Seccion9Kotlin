@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Seccion6</string>
+    <string-array name="paises">
+        <item>España</item>
+        <item>Francia</item>
+        <item>Italia</item>
+        <item>Turquía</item>
+        <item>Ecuador</item>
+        <item>Inglaterra</item>
+        <item>Polonia</item>
+    </string-array>
+</resources>

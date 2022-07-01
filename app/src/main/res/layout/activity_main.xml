@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/eje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/email_ic"
+        android:drawableStart="@drawable/ic_mailicon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColorHint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eje"
+        app:layout_constraintTop_toBottomOf="@+id/eje"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="75dp"
+        android:hint="AutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="MultiAutoCompleteTextView"
+        app:layout_constraintStart_toStartOf="@+id/autoCompleteTextView"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toTopOf="@+id/eje"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:text="Inicio 2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipMigrupo"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView"
+        app:layout_constraintVertical_bias="0.055">
+
+        <com.google.android.material.chip.Chip
+            style="@style/chipEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            app:chipIcon="@drawable/ic_mailicon"
+            app:iconStartPadding="10dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/chipEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ios" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/chipEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/chipEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear OS" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipMigrupo"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioPlaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_700"
+            android:onClick="checkClicked"
+            android:text="Playa"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="570dp" />
+
+        <RadioButton
+            android:id="@+id/radioMontaña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_200"
+            android:checked="true"
+            android:onClick="checkClicked"
+            android:text="Montaña"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="618dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rTransport"
+        android:layout_width="254dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="17dp"
+        android:checkedButton="@id/rPlane"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/rGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rGroup"
+        app:layout_constraintTop_toBottomOf="@+id/chipMigrupo">
+
+        <RadioButton
+            android:id="@+id/rTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/train_bg"
+            android:button="@null"
+            android:buttonTint="@color/purple_700" />
+
+        <RadioButton
+            android:id="@+id/rCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/car_bg"
+            android:button="@null"
+            android:buttonTint="@color/teal_200" />
+
+        <RadioButton
+            android:id="@+id/rPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plane_bg"
+            android:button="@null"
+            android:buttonTint="@color/teal_200" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguro de Viaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rGroup"
+        app:layout_constraintVertical_bias="0.0"
+        android:button="@drawable/cb_bg"
+        android:onClick="checkBoxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viaje cancelable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/rGroup"
+        app:layout_constraintVertical_bias="0.0"
+        android:button="@drawable/cb_bg"
+        android:onClick="checkBoxClicked"/>
+
+    <ToggleButton
+        android:id="@+id/tbNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Sí"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <ToggleButton
+        android:id="@+id/tbCustom"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:checked="true"
+        android:text=""
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/tb_travel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordatorio por e-mail"
+        android:thumb="@drawable/ic_car"
+        android:thumbTint="@color/black"
+        android:trackTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="@+id/tbCustom"
+        app:layout_constraintStart_toEndOf="@+id/tbCustom"
+        app:layout_constraintTop_toTopOf="@+id/tbCustom" />
+
+    <Switch
+        android:id="@+id/switchCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar"
+        android:thumb="@drawable/s_activar"
+        android:showText="true"
+        android:textOff="Off"
+        android:textOn="On"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        android:track="@drawable/s_track"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

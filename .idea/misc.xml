@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/car_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/car_off.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/car_on.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/cb_bg.xml" value="0.2615" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/cb_off.xml" value="0.2615" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/cb_on.xml" value="0.2615" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/chip_checkcolor.xml" value="0.2385" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/corners.xml" value="0.2385" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/email_ic.xml" value="0.335" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/gradient.xml" value="0.2385" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/ic_car.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/ic_plane.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/ic_train.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/plane_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/plane_off.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/plane_on.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/s_activar.xml" value="0.2445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/s_track.xml" value="0.2445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/tb_travel.xml" value="0.2615" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/train_bg.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/train_off.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/drawable/train_on.xml" value="0.2525" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Seccion6/app/src/main/res/layout/activity_main.xml" value="0.30565167243367936" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
