@@ -1,5 +1,6 @@
 package com.example.seccion6
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -144,4 +145,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }

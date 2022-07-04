@@ -63,7 +63,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inicio"
+        android:text="Abrir widgets"
         android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/eje"
         app:layout_constraintEnd_toEndOf="parent"
